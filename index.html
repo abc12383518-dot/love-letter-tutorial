@@ -33,17 +33,19 @@
     <!-- ============================================ -->
     <section>
       <h2>📜 故事背景</h2>
-      <div style="text-align:center; margin: 10px 0;">
-        <img src="images/princess.png" alt="公主" style="width:160px; height:auto; border-radius:12px; border:3px solid var(--gold); box-shadow: 0 4px 15px rgba(44,24,16,0.3);">
-      </div>
-      <p style="text-align:center; font-size:0.9em; line-height:1.8;">
-        在一個美麗的王國裡，<strong>公主</strong>被關在城堡的高塔中。<br>
-        許多追求者都想將自己的<em>情書</em>送到公主手中…<br>
-        但宮廷中充滿了陰謀與背叛！
-      </p>
-      <div class="highlight-box" style="text-align:center;">
-        <p>🎯 <strong>你的目標</strong>：想辦法讓你的情書送到公主手中！<br>
-        淘汰其他追求者，或在回合結束時握有<em>最大數字</em>的牌！</p>
+      <div style="display:flex; align-items:center; gap:20px;">
+        <img src="images/princess.png" alt="公主" style="width:140px; height:auto; border-radius:12px; border:3px solid var(--gold); box-shadow: 0 4px 15px rgba(44,24,16,0.3); flex-shrink:0;">
+        <div>
+          <p style="font-size:0.85em; line-height:1.7;">
+            在一個美麗的王國裡，<strong>公主</strong>被關在城堡的高塔中。<br>
+            許多追求者都想將自己的<em>情書</em>送到公主手中…<br>
+            但宮廷中充滿了陰謀與背叛！
+          </p>
+          <div class="highlight-box">
+            <p>🎯 <strong>你的目標</strong>：想辦法讓你的情書送到公主手中！<br>
+            淘汰其他追求者，或在回合結束時握有<em>最大數字</em>的牌！</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -544,10 +546,8 @@
         </div>
       </div>
       <div class="highlight-box fragment fade-up" style="text-align:center;">
-        <p>🏅 獲勝者得到 1 個<strong>鍾情指示物</strong>（代表公主的一封回信 💌）<br>
-        洗牌重新開始下一輪！<br><br>
-        <strong>最終勝利</strong>：看遊戲人數決定需要幾個指示物<br>
-        🧑‍🤝‍🧑 2人 → 7個 ｜ 👥 3人 → 5個 ｜ 👨‍👩‍👧‍👦 4人 → 4個</p>
+        <p>🏅 獲勝者得到 1 個<strong>鍾情指示物</strong>（代表公主的一封回信 💌），洗牌重新開始下一輪！<br>
+        <strong>最終勝利</strong>：🧑‍🤝‍🧑 2人→7個 ｜ 👥 3人→5個 ｜ 👨‍👩‍👧‍👦 4人→4個</p>
       </div>
     </section>
 
@@ -700,7 +700,7 @@
     <!-- SLIDE 28: QA -->
     <!-- ============================================ -->
     <section>
-      <h2>❓ Q&A</h2>
+      <h2>❓ Q&A（一）</h2>
       <div class="qa-item fragment fade-up">
         <div class="qa-question">如果所有對手都被侍女保護，我出衛兵怎麼辦？</div>
         <div class="qa-answer">如果沒有可以指定的目標，衛兵的效果就不會生效（等於白出），但你還是要打出這張牌。</div>
@@ -711,8 +711,12 @@
       </div>
       <div class="qa-item fragment fade-up">
         <div class="qa-question">我可以用王子對自己使用嗎？</div>
-        <div class="qa-answer">可以！你可以選擇自己，丟掉自己的手牌再抽一張。如果沒有好的目標，有時候換一張牌也不錯。但小心別丟到公主！</div>
+        <div class="qa-answer">可以！你可以選擇自己，丟掉自己的手牌再抽一張。但小心別丟到公主！</div>
       </div>
+    </section>
+
+    <section>
+      <h2>❓ Q&A（二）</h2>
       <div class="qa-item fragment fade-up">
         <div class="qa-question">伯爵夫人什麼時候「必須」打出？</div>
         <div class="qa-answer">只有當你的另一張手牌是「王子(5)」或「國王(6)」的時候，你必須打出伯爵夫人。其他情況可以自由選擇。</div>
@@ -754,7 +758,7 @@
     transition: 'convex',
     transitionSpeed: 'default',
     backgroundTransition: 'fade',
-    center: true,
+    center: false,
     controlsTutorial: true,
     progress: true,
     history: true,
@@ -768,6 +772,7 @@
     margin: 0.04,
     minScale: 0.2,
     maxScale: 2.0,
+    scrollActivationWidth: 768,
   });
 </script>
 
